@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+dist/
+dist-ssr/
+
+# Env files — NEVER commit real keys
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+
+# Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Vite
+*.timestamp-*.mjs
