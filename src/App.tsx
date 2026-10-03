@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { useAuth } from './hooks/useAuth'
 import Layout from './components/Layout'
 import AuthForm from './components/AuthForm'
@@ -31,7 +31,7 @@ export default function App() {
   }
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/auth" element={user ? <Navigate to="/" /> : <AuthForm />} />
         <Route
@@ -47,6 +47,6 @@ export default function App() {
           <Route path="/playground" element={<Playground />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
